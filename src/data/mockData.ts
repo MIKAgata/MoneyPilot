@@ -1,0 +1,122 @@
+import { Transaction, MonthlyData, CategoryData, FinancialSummary } from '@/types/finance';
+
+export const mockTransactions: Transaction[] = [
+  {
+    id: '1',
+    type: 'income',
+    amount: 5500,
+    category: 'salary',
+    description: 'Monthly Salary - January',
+    date: '2025-02-01',
+    createdAt: '2025-02-01T09:00:00Z',
+  },
+  {
+    id: '2',
+    type: 'expense',
+    amount: 1200,
+    category: 'bills',
+    description: 'Rent Payment',
+    date: '2025-02-02',
+    createdAt: '2025-02-02T10:30:00Z',
+  },
+  {
+    id: '3',
+    type: 'expense',
+    amount: 85,
+    category: 'food',
+    description: 'Weekly Groceries',
+    date: '2025-02-03',
+    createdAt: '2025-02-03T14:15:00Z',
+  },
+  {
+    id: '4',
+    type: 'income',
+    amount: 800,
+    category: 'freelance',
+    description: 'Web Design Project',
+    date: '2025-02-03',
+    createdAt: '2025-02-03T16:00:00Z',
+  },
+  {
+    id: '5',
+    type: 'expense',
+    amount: 45,
+    category: 'transport',
+    description: 'Gas Station',
+    date: '2025-02-04',
+    createdAt: '2025-02-04T08:45:00Z',
+  },
+  {
+    id: '6',
+    type: 'expense',
+    amount: 120,
+    category: 'entertainment',
+    description: 'Concert Tickets',
+    date: '2025-02-04',
+    createdAt: '2025-02-04T19:30:00Z',
+  },
+  {
+    id: '7',
+    type: 'expense',
+    amount: 250,
+    category: 'shopping',
+    description: 'New Clothes',
+    date: '2025-02-01',
+    createdAt: '2025-02-01T15:00:00Z',
+  },
+  {
+    id: '8',
+    type: 'income',
+    amount: 150,
+    category: 'investment',
+    description: 'Stock Dividends',
+    date: '2025-01-30',
+    createdAt: '2025-01-30T11:00:00Z',
+  },
+  {
+    id: '9',
+    type: 'expense',
+    amount: 65,
+    category: 'health',
+    description: 'Pharmacy',
+    date: '2025-01-29',
+    createdAt: '2025-01-29T13:20:00Z',
+  },
+  {
+    id: '10',
+    type: 'expense',
+    amount: 200,
+    category: 'education',
+    description: 'Online Course Subscription',
+    date: '2025-01-28',
+    createdAt: '2025-01-28T10:00:00Z',
+  },
+];
+
+export const mockMonthlyData: MonthlyData[] = [
+  { month: 'Sep', income: 4800, expense: 3200 },
+  { month: 'Oct', income: 5200, expense: 3800 },
+  { month: 'Nov', income: 5100, expense: 3500 },
+  { month: 'Dec', income: 6200, expense: 4800 },
+  { month: 'Jan', income: 5500, expense: 3600 },
+  { month: 'Feb', income: 6450, expense: 1965 },
+];
+
+export const mockCategoryData: CategoryData[] = [
+  { category: 'bills', amount: 1200, percentage: 35, color: 'hsl(var(--chart-1))' },
+  { category: 'shopping', amount: 450, percentage: 13, color: 'hsl(var(--chart-2))' },
+  { category: 'food', amount: 380, percentage: 11, color: 'hsl(var(--chart-3))' },
+  { category: 'transport', amount: 320, percentage: 9, color: 'hsl(var(--chart-4))' },
+  { category: 'entertainment', amount: 280, percentage: 8, color: 'hsl(var(--chart-5))' },
+  { category: 'health', amount: 165, percentage: 5, color: 'hsl(217 71% 45%)' },
+  { category: 'education', amount: 200, percentage: 6, color: 'hsl(160 84% 50%)' },
+  { category: 'other_expense', amount: 470, percentage: 13, color: 'hsl(38 92% 50%)' },
+];
+
+export const mockSummary: FinancialSummary = {
+  totalBalance: 12485,
+  totalIncome: 6450,
+  totalExpense: 1965,
+  incomeChange: 12.5,
+  expenseChange: -8.3,
+};
