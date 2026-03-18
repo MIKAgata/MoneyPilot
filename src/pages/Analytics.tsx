@@ -10,7 +10,7 @@ import { cn } from '@/lib/utils';
 const Analytics = () => {
   const { summary, monthlyData, categoryData } = useTransactions();
 
-  // Calculate insights
+
   const savingsRate = summary.totalIncome > 0 
     ? Math.round(((summary.totalIncome - summary.totalExpense) / summary.totalIncome) * 100)
     : 0;
